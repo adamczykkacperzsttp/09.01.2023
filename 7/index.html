@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+    <style>
+        #ramka
+        {
+            width: 300px;
+            height: 300px;
+            border: 15px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="ramka"></div>
+    <button id="ziel">Zielone tło</button>
+    <button id="czer">Czerwone tło</button>
+    <script>
+        var rama=document.querySelector("#ramka")
+        var ziel=document.querySelector("#ziel")
+        var czer=document.querySelector("#czer")
+        ziel.addEventListener('click', function(){
+            document.getElementById("ramka").style.background="green"
+        })
+        czer.addEventListener('click', function(){
+            document.getElementById("ramka").style.background="red"
+        })
+    </script>
+</body>
+</html>

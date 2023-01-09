@@ -1,0 +1,1 @@
+https://pl.khanacademy.org/computing/computer-programming/html-css-js/html-js-dom-access/pt/finding-elements-by-css-selector

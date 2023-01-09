@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        #kontener {
+            width: 50px;
+            height: 50px;
+            background: aliceblue;
+            user-select: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="kontener">Imię Nazwisko</div>
+    <script>
+        var kontener = document.getElementById("kontener")
+        kontener.onclick = function() {
+            kontener.style.background = "rgb("+Math.round(Math.random() * 255)+", "+Math.round(Math.random() * 255)+", "+Math.round(Math.random() * 255) +")"
+        }
+
+        kontener.onmouseenter = function() {
+            kontener.style.fontSize = "32px"
+        }
+
+        kontener.onmouseleave = function() {
+            kontener.style.fontSize = "16px"
+        }
+
+    </script>
+    
+</body>
+</html>

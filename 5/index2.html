@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5a</title>
+</head>
+<body>
+    <button id="przycisk" onclick="wdas()">1</button>
+    <div id="element_div" onclick="wdass()">2</div>
+    <span id="element_span" onclick="wdasss()">3</span>
+    <div id="opis"></div>
+    <script>
+        function wdas()
+        {
+            document.getElementById("opis").innerHTML="przycisk"
+        }
+        function wdass()
+        {
+            document.getElementById("opis").innerHTML="element_div"
+        }
+        function wdasss()
+        {
+            document.getElementById("opis").innerHTML="element_span"
+        }
+    </script>
+</body>
+</html>

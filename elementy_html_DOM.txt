@@ -1,0 +1,14 @@
+ Wybrane pola i metody modelu DOM języka JavaScript - zapoznaj się na www.w3schools.com
+
+document.getElementById(id)
+document.getElementsByTagName(TagName)
+document.getElementsByClassName(ClassName)
+document.getElementsByName(ElementName)
+element.innerHTML = “nowa zawartość”
+element.attribute_name = “nowa zawartość”
+element.setAttribute(atrybut, wartosc)
+element.style.property_name = “nowa wartość”
+document.createElement(element)
+document.removeChild(element)
+document.appendChild(element)
+document.replaceChild(element)

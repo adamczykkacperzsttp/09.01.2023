@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8</title>
+    <style>
+        body {
+            color: white;
+        }
+
+        #liczba {
+            background-color: blue;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <input type="range" value="300" min="0" max="500" id="suwak">
+    <div id="liczba">300</div>
+    <script>
+        const liczba=document.querySelector('#liczba');
+        const suwak=document.querySelector('#suwak');
+        suwak.addEventListener("input", function(){
+            liczba.innerHTML=suwak.value
+            liczba.style.width = suwak.value + "px"
+            liczba.style.height = suwak.value + "px"
+        })
+    </script>
+</body>
+</html>

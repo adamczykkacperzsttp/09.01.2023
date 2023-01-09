@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4a</title>
+    <script>
+
+        function przycisk() {
+            var przycisk = this
+            var wynik = document.querySelector("#wynik")
+            przycisk.addEventListener('click', () => {
+                wynik.innerHTML = "Kliknąłeś na przycisk"
+            })
+    }
+    </script>
+</head>
+<body>
+    
+    <button class="przycisk" onclick="przycisk()">jeden</button>
+    <button class="przycisk" onclick="przycisk()">dwa</button>
+    <button class="przycisk" onclick="przycisk()">trzy</button>
+
+    <p id="wynik"></p>
+    
+</body>
+</html>
